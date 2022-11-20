@@ -1,0 +1,48 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "Flutter Mane",
+      "type1": "ghost",
+      "type2": "fairy",
+      "icon": ""
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "cosinity",
+      "email": "test@example.com"
+    }
+  ],
+  "leagues": [
+    {
+      "id": 1,
+      "name": "Columbus Colosseum",
+      "curSeasonID": 1
+    }
+  ],
+  "seasons": [
+    {
+      "id": 1,
+      "leagueID": 1
+    }
+  ],
+  "rosters": [
+    {
+      "id": 1,
+      "seasonID": 1,
+      "roster": [
+        {
+          "id": 1,
+          "name": "Flutter Mane",
+          "type1": "ghost",
+          "type2": "fairy",
+          "icon": ""
+        }
+      ],
+      "teamName": "New England Nidokings",
+      "ownerID": 1
+    }
+  ]
+}
