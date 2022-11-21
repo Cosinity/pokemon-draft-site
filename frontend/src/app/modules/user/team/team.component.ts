@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TeamService } from 'src/app/core/services/team.service';
-import { SeasonRoster } from 'src/app/shared/models/season-roster.model';
+import { Roster } from 'src/app/shared/models/roster.model';
 
 @Component({
   selector: 'app-team',
@@ -8,7 +8,7 @@ import { SeasonRoster } from 'src/app/shared/models/season-roster.model';
   styleUrls: ['./team.component.scss']
 })
 export class TeamComponent implements OnInit {
-  public roster: SeasonRoster | null = null;
+  public roster: Roster | null = null;
 
   constructor(
     private teamService: TeamService
