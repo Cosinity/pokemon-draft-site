@@ -1,1 +1,8 @@
-<p>schedule works!</p>
+<div>
+  <div *ngFor="let round of schedule | keyvalue">
+    <div>Round {{ round.key }}</div>
+    <div *ngFor="let match of round.value">
+      <span>{{ match.teamA.teamName }}</span> VS <span>{{ match.teamB.teamName }}</span>
+    </div>
+  </div>
+</div>
