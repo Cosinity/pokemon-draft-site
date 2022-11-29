@@ -1,1 +1,10 @@
-<p>team works!</p>
+<div *ngIf="roster">
+  <div>{{ roster.teamName }}</div>
+  <div *ngFor="let mon of roster.pokemon">
+    <div>{{ mon.name }}</div>
+    <img [src]="'/assets/type_icons/' + mon.type1 + '.png'" />
+    <ng-container *ngIf="mon.type2">
+      <img [src]="'/assets/type_icons/' + mon.type2 + '.png'" />
+    </ng-container>
+  </div>
+</div>
