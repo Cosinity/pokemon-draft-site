@@ -1,8 +1,8 @@
 <div>
-  <div *ngFor="let round of schedule | keyvalue">
-    <div>Round {{ round.key }}</div>
-    <div *ngFor="let match of round.value">
-      <span>{{ match.teamA.teamName }}</span> VS <span>{{ match.teamB.teamName }}</span>
+  <div *ngFor="let roundNum of (schedule.numRounds | range:1)">
+    <div>Round {{ roundNum }}</div>
+    <div *ngFor="let match of schedule.rounds.get(roundNum)">
+      <span>{{ match.rosterA.teamName }}</span> VS <span>{{ match.rosterB.teamName }}</span>
     </div>
   </div>
 </div>

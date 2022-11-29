@@ -7,6 +7,7 @@ import { RankingsComponent } from './rankings/rankings.component';
 import { DraftComponent } from './draft/draft.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { TierListComponent } from './tier-list/tier-list.component';
+import { SharedModule } from '../../shared/shared.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TierListComponent } from './tier-list/tier-list.component';
   ],
   imports: [
     CommonModule,
-    LeagueRoutingModule
+    LeagueRoutingModule,
+    SharedModule
   ],
   exports: [
     routedComponents

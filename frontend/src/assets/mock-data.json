@@ -87,7 +87,7 @@
   "matches": [
     {
       "id": 1,
-      "teamA": {
+      "rosterA": {
         "id": 1,
         "seasonID": 1,
         "teamName": "New England Nidokings",
@@ -102,7 +102,7 @@
           }
         ]
       },
-      "teamB": {
+      "rosterB": {
         "id": 2,
         "seasonID": 1,
         "teamName": "Bean Town Bisharps",

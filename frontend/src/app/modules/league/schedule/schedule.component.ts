@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MatchService } from 'src/app/core/services/match.service';
-import { Match } from 'src/app/shared/models/match.model';
+import { ActivatedRoute } from '@angular/router';
+import { Schedule } from 'src/app/shared/models/schedule.model';
 
 @Component({
   selector: 'app-schedule',
@@ -9,13 +9,13 @@ import { Match } from 'src/app/shared/models/match.model';
 })
 export class ScheduleComponent implements OnInit {
 
-  public schedule: Map<number, Match[]> = new Map<number, Match[]>();
+  public schedule!: Schedule;
 
   constructor(
-    private matchService: MatchService
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
-    this.schedule = this.matchService.getSchedule(1);
+    this.schedule = this.route.snapshot.data['schedule'];
   }
 }
