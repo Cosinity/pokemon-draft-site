@@ -1,1 +1,8 @@
-<p>schedule works!</p>
+<div>
+  <div *ngFor="let roundNum of (schedule.numRounds | range:1)">
+    <div>Round {{ roundNum }}</div>
+    <div *ngFor="let match of schedule.rounds.get(roundNum)">
+      <span>{{ match.rosterA.teamName }}</span> VS <span>{{ match.rosterB.teamName }}</span>
+    </div>
+  </div>
+</div>

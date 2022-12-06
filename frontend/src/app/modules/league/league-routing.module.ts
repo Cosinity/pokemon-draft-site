@@ -4,13 +4,14 @@ import { DraftComponent } from './draft/draft.component';
 import { LeagueComponent } from './league.component';
 import { RankingsComponent } from './rankings/rankings.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { ScheduleResolver } from './schedule/schedule.resolver';
 import { TierListComponent } from './tier-list/tier-list.component';
 
 const routes: Routes = [
   { path: '', component: LeagueComponent },
   { path: 'rankings', component: RankingsComponent },
   { path: 'draft', component: DraftComponent },
-  { path: 'schedule', component: ScheduleComponent },
+  { path: 'schedule', component: ScheduleComponent, resolve: { schedule: ScheduleResolver } },
   { path: 'tier-list', component: TierListComponent }
 ];
 

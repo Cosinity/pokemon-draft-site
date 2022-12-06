@@ -7,11 +7,11 @@ export class Roster {
   public teamName: string;
   public ownerID: number;
 
-  constructor(seasonRoster: any) {
-    this.id = seasonRoster.id;
-    this.seasonID = seasonRoster.seasonID;
-    this.pokemon = seasonRoster.roster.map((p: Pokemon) => new Pokemon(p));
-    this.teamName = seasonRoster.teamName;
-    this.ownerID = seasonRoster.ownerID;
+  constructor(roster: any) {
+    this.id = roster.id;
+    this.seasonID = roster.seasonID;
+    this.pokemon = roster.pokemon.map((p: Pokemon) => new Pokemon(p));
+    this.teamName = roster.teamName;
+    this.ownerID = roster.ownerID;
   }
 }

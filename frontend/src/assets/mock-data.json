@@ -6,6 +6,13 @@
       "type1": "ghost",
       "type2": "fairy",
       "icon": ""
+    },
+    {
+      "id": 2,
+      "name": "Roaring Moon",
+      "type1": "dragon",
+      "type2": "dark",
+      "icon": ""
     }
   ],
   "users": [
@@ -13,6 +20,11 @@
       "id": 1,
       "username": "cosinity",
       "email": "test@example.com"
+    },
+    {
+      "id": 2,
+      "username": "schowdury",
+      "email": "test2@example.com"
     }
   ],
   "leagues": [
@@ -20,6 +32,18 @@
       "id": 1,
       "name": "Columbus Colosseum",
       "curSeasonID": 1
+    }
+  ],
+  "leagueMembers": [
+    {
+      "userID": 1,
+      "leagueID": 1,
+      "curRosterID": 1
+    },
+    {
+      "userID": 2,
+      "leagueID": 1,
+      "curRosterID": 2
     }
   ],
   "seasons": [
@@ -32,7 +56,9 @@
     {
       "id": 1,
       "seasonID": 1,
-      "roster": [
+      "teamName": "New England Nidokings",
+      "ownerID": 1,
+      "pokemon": [
         {
           "id": 1,
           "name": "Flutter Mane",
@@ -40,9 +66,60 @@
           "type2": "fairy",
           "icon": ""
         }
-      ],
-      "teamName": "New England Nidokings",
-      "ownerID": 1
+      ]
+    },
+    {
+      "id": 2,
+      "seasonID": 1,
+      "teamName": "Bean Town Bisharps",
+      "ownerID": 2,
+      "pokemon": [
+        {
+          "id": 2,
+          "name": "Roaring Moon",
+          "type1": "dragon",
+          "type2": "dark",
+          "icon": ""
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": 1,
+      "rosterA": {
+        "id": 1,
+        "seasonID": 1,
+        "teamName": "New England Nidokings",
+        "ownerID": 1,
+        "pokemon": [
+          {
+            "id": 1,
+            "name": "Flutter Mane",
+            "type1": "ghost",
+            "type2": "fairy",
+            "icon": ""
+          }
+        ]
+      },
+      "rosterB": {
+        "id": 2,
+        "seasonID": 1,
+        "teamName": "Bean Town Bisharps",
+        "ownerID": 2,
+        "pokemon": [
+          {
+            "id": 2,
+            "name": "Roaring Moon",
+            "type1": "dragon",
+            "type2": "dark",
+            "icon": ""
+          }
+        ]
+      },
+      "winner": null,
+      "seasonID": 1,
+      "round": 1
     }
   ]
 }
